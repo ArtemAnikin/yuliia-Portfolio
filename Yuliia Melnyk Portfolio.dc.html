@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yuliia Melnyk — Product Designer</title>
+<meta property="og:title" content="Yuliia Melnyk — Product Designer">
+<meta name="description" content="Portfolio of Yuliia Melnyk, product designer — enterprise platforms, dashboards and mobile apps.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Archivo:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Archivo, sans-serif; background: #FFFFFF; color: #0A0A0A; }
+a { color: #0A0A0A; text-decoration: none; }
+a:hover { color: #0A0A0A; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent, #F2965A); outline-offset: 3px; }
+::selection { background: var(--accent, #F2965A); color: #0A0A0A; }
+@keyframes om-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+[data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
+[data-reveal].om-revealed { opacity: 1; transform: none; }
+@media (max-width: 700px) {
+  #hero { height: auto !important; min-height: 70vh; }
+  #hero h1 { font-size: 10.5vw !important; }
+  #hero-photo { order: 3; width: 52vw !important; height: 52vw !important; margin: 20px auto 0 !important; }
+  nav[aria-label="Main"] { flex-wrap: wrap !important; }
+  nav[aria-label="Main"] a { padding: 8px 8px !important; }
+  section[aria-label="Problem and solution"] > div > div { border-left: none !important; padding-left: 0 !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+</style>
+</helmet>
+<div style="font-family:Archivo,sans-serif;color:#0A0A0A;background:#FFFFFF;min-height:100vh">
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<div data-screen-label="Home">
+  <nav aria-label="Main" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#" style="font-family:Anton,sans-serif;font-size:18px;letter-spacing:0.04em;text-transform:uppercase">Yuliia Melnyk</a>
+    <div style="display:flex;gap:8px">
+      <a href="#work" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px" style-hover="background:#0A0A0A;color:#FFFFFF">Work</a>
+      <a href="#resume" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px" style-hover="background:#0A0A0A;color:#FFFFFF">Resume</a>
+      <a href="#contact" style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px" style-hover="background:#0A0A0A;color:#FFFFFF">Contact</a>
+    </div>
+  </nav>
+
+  
+
+  <header id="hero" data-reveal style="max-width: 1700px; margin: 0 auto; padding: clamp(48px,9vh,110px) clamp(20px,4vw,48px); box-sizing: border-box; height: 772px; display: flex; flex-direction: column; justify-content: center; align-items: center">
+    <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;color:#0A0A0A;font-size:min(150px,9.6vw);line-height:0.85;letter-spacing:-0.01em;text-align:center;display:flex;flex-direction:column;align-items:center;gap:clamp(12px,1.5vw,28px)">
+      <span style="display:block">End-to-end</span>
+      <span style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:clamp(12px,1.2vw,24px)"><span>Product</span><img id="hero-photo" src="assets/yuliia.jpg" alt="Yuliia Melnyk" style="display: block; width: 256px; aspect-ratio: 1; object-fit: cover; object-position: 50% 16%; flex-shrink: 0; margin: -0.1em 0; clip-path: polygon(50% 0%, 60.87% 9.43%, 75% 6.7%, 79.7% 20.3%, 93.3% 25%, 90.57% 39.13%, 100% 50%, 90.57% 60.87%, 93.3% 75%, 79.7% 79.7%, 75% 93.3%, 60.87% 90.57%, 50% 100%, 39.13% 90.57%, 25% 93.3%, 20.3% 79.7%, 6.7% 75%, 9.43% 60.87%, 0% 50%, 9.43% 39.13%, 6.7% 25%, 20.3% 20.3%, 25% 6.7%, 39.13% 9.43%); height: 256px"><span>Designer</span></span>
+    </h1>
+    <div style="margin-top:clamp(48px,6vw,88px);width:100%;display:grid;grid-template-columns:{{ heroCardCols }};gap:clamp(16px,2vw,28px)">
+      <p style="margin:0;border:1.5px solid #0A0A0A;padding:20px;font-size:15px;font-weight:500;line-height:1.5;color:#3A3A3A;text-align:left;box-sizing:border-box;position:relative"><span aria-hidden="true" style="position:absolute;top:-14px;right:-14px;width:36px;height:36px;background:var(--accent,#F2965A);animation:om-spin 8s linear infinite;clip-path:polygon(50% 0%, 60.87% 9.43%, 75% 6.7%, 79.7% 20.3%, 93.3% 25%, 90.57% 39.13%, 100% 50%, 90.57% 60.87%, 93.3% 75%, 79.7% 79.7%, 75% 93.3%, 60.87% 90.57%, 50% 100%, 39.13% 90.57%, 25% 93.3%, 20.3% 79.7%, 6.7% 75%, 9.43% 60.87%, 0% 50%, 9.43% 39.13%, 6.7% 25%, 20.3% 20.3%, 25% 6.7%, 39.13% 9.43%)"></span>6+ years of experience designing web platforms, dashboards, mobile apps and SaaS products.</p>
+      <p style="margin:0;border:1.5px solid #0A0A0A;padding:20px;font-size:15px;font-weight:500;line-height:1.5;color:#3A3A3A;text-align:left;box-sizing:border-box;position:relative"><span aria-hidden="true" style="position:absolute;top:-14px;right:-14px;width:36px;height:36px;background:var(--accent,#F2965A);animation:om-spin 8s linear infinite;clip-path:polygon(50% 0%, 60.87% 9.43%, 75% 6.7%, 79.7% 20.3%, 93.3% 25%, 90.57% 39.13%, 100% 50%, 90.57% 60.87%, 93.3% 75%, 79.7% 79.7%, 75% 93.3%, 60.87% 90.57%, 50% 100%, 39.13% 90.57%, 25% 93.3%, 20.3% 79.7%, 6.7% 75%, 9.43% 60.87%, 0% 50%, 9.43% 39.13%, 6.7% 25%, 20.3% 20.3%, 25% 6.7%, 39.13% 9.43%)"></span>Based in Montenegro (CET), working remotely with distributed teams.</p>
+      <p style="margin:0;border:1.5px solid #0A0A0A;padding:20px;font-size:15px;font-weight:500;line-height:1.5;color:#3A3A3A;text-align:left;box-sizing:border-box;position:relative"><span aria-hidden="true" style="position:absolute;top:-14px;right:-14px;width:36px;height:36px;background:var(--accent,#F2965A);animation:om-spin 8s linear infinite;clip-path:polygon(50% 0%, 60.87% 9.43%, 75% 6.7%, 79.7% 20.3%, 93.3% 25%, 90.57% 39.13%, 100% 50%, 90.57% 60.87%, 93.3% 75%, 79.7% 79.7%, 75% 93.3%, 60.87% 90.57%, 50% 100%, 39.13% 90.57%, 25% 93.3%, 20.3% 79.7%, 6.7% 75%, 9.43% 60.87%, 0% 50%, 9.43% 39.13%, 6.7% 25%, 20.3% 20.3%, 25% 6.7%, 39.13% 9.43%)"></span>Worked with startups and product teams across FinTech, InsurTech, HR Tech and HealthTech.</p>
+    </div>
+  </header><section data-reveal id="work" aria-label="Selected work" style="border-top:1.5px solid #0A0A0A;padding:0 clamp(20px,5vw,64px)">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:clamp(40px,6vh,64px) 0 8px">
+      <h2 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(36px,5vw,72px);line-height:0.95">Selected work</h2>
+      <span style="font-family:Anton,sans-serif;font-size:clamp(20px,2vw,28px);color:#5A5A5A">(5)</span>
+    </div>
+
+    <article data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(40px,6vh,64px) 0">
+      <div style="border-radius:10px;overflow:hidden;line-height:0"><img src="assets/insurance/01-hero-customers-lobby.jpg" alt="Insurance Management System — cover" style="width:100%;height:auto;display:block"></div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <span style="font-family:Anton,sans-serif;font-size:15px;color:#5A5A5A">01</span>
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,46px);line-height:0.95">Insurance Management System</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A;max-width:48ch">An insurance portfolio platform rebuilt around what an agent actually does: get the data in, trust it, and act on it.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Enterprise</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Web platform</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">2023–2025</span>
+        </div>
+        <a href="#case-insurance" style="display:inline-block;border:1.5px solid #0A0A0A;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-top:16px" style-hover="background:#0A0A0A;color:#FFFFFF">View case study →</a>
+      </div>
+    </article>
+
+    <article data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(40px,6vh,64px) 0;border-top:1.5px solid #0A0A0A">
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <span style="font-family:Anton,sans-serif;font-size:15px;color:#5A5A5A">02</span>
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,46px);line-height:0.95">Traderise</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A;max-width:48ch">A SaaS trading platform where analysis and the conversation about it live in one screen.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">SaaS · Trading</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Responsive web app</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">2024–2025</span>
+        </div>
+        <a href="#case-traderise" style="display:inline-block;border:1.5px solid #0A0A0A;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-top:16px" style-hover="background:#0A0A0A;color:#FFFFFF">View case study →</a>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;line-height:0"><img src="assets/traderise/01-cover.jpg" alt="Traderise — cover" style="width:100%;height:auto;display:block"></div>
+    </article>
+
+    <article data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(40px,6vh,64px) 0;border-top:1.5px solid #0A0A0A">
+      <div style="border-radius:10px;overflow:hidden;line-height:0"><img src="assets/talenttap/hero.jpg" alt="TalentTap — cover" style="width:100%;height:auto;display:block"></div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <span style="font-family:Anton,sans-serif;font-size:15px;color:#5A5A5A">03</span>
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,46px);line-height:0.95">TalentTap</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A;max-width:48ch">AI-powered recruitment analytics delivered inside the recruiter's existing sourcing flow.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">AI · Recruitment</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Web + extension</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">2024</span>
+        </div>
+        <a href="#case-talenttap" style="display:inline-block;border:1.5px solid #0A0A0A;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-top:16px" style-hover="background:#0A0A0A;color:#FFFFFF">View case study →</a>
+      </div>
+    </article>
+
+    <article data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(40px,6vh,64px) 0;border-top:1.5px solid #0A0A0A">
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <span style="font-family:Anton,sans-serif;font-size:15px;color:#5A5A5A">04</span>
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,46px);line-height:0.95">Magnolia</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A;max-width:48ch">Field asset reporting and maintenance for technicians who work far from a desk.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Field ops</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Mobile app</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">2023</span>
+        </div>
+        <a href="#case-magnolia" style="display:inline-block;border:1.5px solid #0A0A0A;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-top:16px" style-hover="background:#0A0A0A;color:#FFFFFF">View case study →</a>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;line-height:0"><img src="assets/magnolia/hero.jpg" alt="Magnolia — cover" style="width:100%;height:auto;display:block"></div>
+    </article>
+
+    <article data-reveal style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(28px,4vw,56px);align-items:center;padding:clamp(40px,6vh,64px) 0;border-top:1.5px solid #0A0A0A">
+      <div style="border-radius:10px;overflow:hidden;line-height:0"><img src="assets/nexfit/home.jpg" alt="NexFit — cover" style="width:100%;height:auto;display:block"></div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+        <span style="font-family:Anton,sans-serif;font-size:15px;color:#5A5A5A">05</span>
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3vw,46px);line-height:0.95">NexFit</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A;max-width:48ch">A health and nutrition companion that makes daily logging fast enough to stick.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Health &amp; fitness</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">Mobile app</span>
+          <span style="background:#FBDFCB;border-radius:999px;padding:6px 15px;font-size:12px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase">2022</span>
+        </div>
+        <a href="#case-nexfit" style="display:inline-block;border:1.5px solid #0A0A0A;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-top:16px" style-hover="background:#0A0A0A;color:#FFFFFF">View case study →</a>
+      </div>
+    </article>
+  </section>
+
+  <section data-reveal aria-label="How I work" style="border-top:1.5px solid #0A0A0A;padding:clamp(40px,6vh,72px) clamp(20px,5vw,64px)">
+    <h2 style="margin:0 0 40px;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(36px,5vw,72px);line-height:0.95">How I work</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(24px,3vw,40px)">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">UX Research</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#5A5A5A">Stakeholder and user interviews, competitive analysis, usability testing.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">Journey Mapping &amp; IA</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#5A5A5A">Mapping flows and information architecture for multi-role systems.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">Prototyping</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#5A5A5A">Interactive Figma prototypes validated with stakeholders before build.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">Design Systems</h3>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#5A5A5A">Tokens, components and states documented for engineering handoff.</p>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showAi }}" hint-placeholder-val="{{ true }}">
+  <section data-reveal aria-label="AI in my workflow" style="border-top:1.5px solid #0A0A0A;padding:clamp(40px,6vh,72px) clamp(20px,5vw,64px)">
+    <h2 style="margin:0 0 24px;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(28px,3.5vw,48px);line-height:0.95">AI in my workflow</h2>
+    <p style="margin:0;font-size:clamp(17px,1.4vw,20px);line-height:1.6;max-width:65ch;text-wrap:pretty">AI-assisted design tools are part of my production workflow, not an experiment. I use <strong>Figma Make</strong>, <strong>Claude Design</strong>, <strong>Claude Code</strong> and <strong>Lovable</strong> for rapid concept exploration and for building working prototypes stakeholders can click through before engineering starts. <span style="color:#5A5A5A">This site was designed and built in Claude Design.</span></p>
+  </section>
+  </sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ isTalentTap }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="TalentTap case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">TalentTap</span>
+  </nav>
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="line-height:0"><img src="assets/talenttap/hero.jpg" alt="TalentTap — dashboard" style="width:100%;height:auto;display:block"></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">TalentTap</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Role</span><span style="font-size:16px;font-weight:600">Product Designer — end-to-end</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Timeline</span><span style="font-size:16px;font-weight:600">2025</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Platform</span><span style="font-size:16px;font-weight:600">Desktop web app + Chrome extension over LinkedIn</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Team</span><span style="font-size:16px;font-weight:600">Client-side product team — PMs and developers</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Problem and solution" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem &amp; Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Problem</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Recruiters source candidates inside LinkedIn, but everything they do with those candidates happens somewhere else. Profiles get copied into spreadsheets, conversations live in email, and the judgement about whether someone fits is spread across all three — so the work of assessing a candidate is mostly the work of moving their data around.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;border-left:1.5px solid #0A0A0A;padding-left:clamp(24px,3vw,48px)">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Solution</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">TalentTap pulls candidate data out of LinkedIn through a Chrome extension and lands it in one workspace where job postings, AI resume analysis, pipelines and messaging sit together. The extension keeps the recruiter on the page they source from; the web app is where the pipeline is actually worked.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">01</span>Dashboard</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Designed the recruitment overview: pipeline metrics, activity over time, and recent candidate movement, so a hiring manager can read the state of open roles without opening any of them.</p>
+        <div style="line-height:0"><img src="assets/talenttap/dashboard.jpg" alt="TalentTap dashboard" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">02</span>Job postings</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">A list view of active listings with status and candidate counts, built around quick actions rather than deep navigation — the posting is a container you drop into, not a document you edit.</p>
+        <div style="line-height:0"><img src="assets/talenttap/jobs.svg" alt="Job postings" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">03</span>Candidates management</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">The full lifecycle of a candidate record: list, profile, status change, notification states, and the delete confirmation. Designed the states that usually get skipped, because a pipeline is mostly made of them.</p>
+        <div style="line-height:0"><img src="assets/talenttap/candidates.jpg" alt="Candidates management" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">04</span>Messaging</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Conversation list, expanded thread and compose state, so a message to a candidate does not require a second tool and a second copy of their details.</p>
+        <div style="line-height:0"><img src="assets/talenttap/messaging.svg" alt="Messaging" style="width:100%;height:auto;display:block"></div>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">The tool works inside LinkedIn instead of pulling the recruiter out of it</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">Sourcing happens on LinkedIn. Any tool that requires leaving the page to record a candidate competes with the recruiter's own momentum, and loses.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">The extension sits as an overlay on LinkedIn in two states: a compact sign-in, and an expanded panel showing matched candidates with their resumes, match scores and immediate actions.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">The capture step has to cost almost nothing or it does not happen. The trade-off is severe constraint: everything essential has to fit into a panel floating over someone else's interface, which is why the expanded state carries only what supports a decision.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/talenttap/extension.jpg" alt="Extension states over LinkedIn" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Two states of the extension, over LinkedIn</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">AI output is material for comparison, not a verdict</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A scoring model can produce a number for every candidate. A number invites the recruiter to stop reading — and to inherit whatever the model got wrong.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Analysis results are shown as strengths and gaps that can be scanned and compared, with an explicit loading state and an explicit empty state rather than a silent one.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">The decision stays with the person. The screen is designed to be read side by side across candidates instead of collapsing into a single ranking — which costs the recruiter more attention than a verdict would.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/talenttap/ai.jpg" alt="AI analysis flow" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Default and populated states of the analysis flow</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">Matches are surfaced against a posting, not against the whole database</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A candidate is never good in the abstract, only good for something. A global list of "strong candidates" is not actionable.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Matching is scoped to a job posting, with colour-coded indicators and the ability to move a candidate into the pipeline from the same screen.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">It keeps the comparison honest — everyone on screen is being judged against the same role — and it makes the next action available where the judgement is made.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/talenttap/match.jpg" alt="AI-matched candidates" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">AI-matched candidates for a single posting</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>In production.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>The full recruitment workflow covered end to end, from posting a role to deciding on a candidate, across both the web app and the extension.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>The extension and the web app share one interface language, so the same candidate record reads the same in both places.</span></p>
+      </div>
+    </section>
+
+    <section aria-label="What I'd do differently" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — What I'd do differently</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:70ch;text-wrap:pretty">This project ran without user research. The workflow was reconstructed from the brief and from discussion with the PMs and developers, and the riskiest assumption in it — that recruiters want to stay inside LinkedIn rather than move to a dedicated tool — is exactly the kind of thing that should have been watched rather than assumed. Given the same project again, I'd sit with recruiters during a sourcing session before designing the extension, and I'd test whether the AI analysis screen actually gets read or quietly reduced to its score.</p>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="#case-magnolia" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">Magnolia →</a>
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isMagnolia }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Magnolia case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">Magnolia</span>
+  </nav>
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="line-height:0"><img src="assets/magnolia/hero.jpg" alt="Magnolia — cross-platform overview" style="width:100%;height:auto;display:block"></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">Magnolia</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Role</span><span style="font-size:16px;font-weight:600">UX/UI Designer — extending an existing product</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Timeline</span><span style="font-size:16px;font-weight:600">2024</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Platform</span><span style="font-size:16px;font-weight:600">Cross-platform: mobile for field workers, desktop for supervisors and admins</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Team</span><span style="font-size:16px;font-weight:600">Client-side product team — PMs and developers</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Problem and solution" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem &amp; Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Problem</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Park maintenance is documented in the field, by people standing next to a tree, and then has to become a record someone can search, assign and audit from an office. Paper inspection forms make the first half easy and the second half impossible, and the product that replaced them had to serve two groups whose working conditions have almost nothing in common.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;border-left:1.5px solid #0A0A0A;padding-left:clamp(24px,3vw,48px)">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Solution</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Magnolia covers the whole reporting lifecycle in one system: an interactive map of park objects, structured surveys completed on site, tasks tied to specific locations, and detail pages that hold everything known about an object. I joined an existing product and designed the areas it was missing — authentication, the map experience, garden and object pages, surveys, tasks, and customer and user management — as full mobile and desktop counterparts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">01</span>Authentication and onboarding</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Sign-up, login, phone verification, and the forgot-and-reset password journey, for both mobile and desktop, in the product's existing visual language.</p>
+        <div style="line-height:0"><img src="assets/magnolia/auth.svg" alt="Authentication flows" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">02</span>Garden and object detail pages</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Every park object carries general information, description, a photo gallery, reports, comments, a QR code and contacts. Structured as a scrollable screen on mobile and a laid-out page on desktop, so that everything known about an object is available without any of it dominating.</p>
+        <div style="line-height:0"><img src="assets/magnolia/garden.jpg" alt="Garden and object detail pages" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">03</span>Survey and reporting forms</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Multi-step forms with more than fourteen structured fields — species, condition, dimensions, treatment, photos, signature — ordered so they can be completed standing up, outdoors, on a phone.</p>
+        <div style="line-height:0"><img src="assets/magnolia/survey.jpg" alt="Survey forms" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">04</span>Task management</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">A task list with status, a detail page tied to its map location, a closed state, and the return to the map after completion — because a finished task in the field means moving to the next place, not to the next row.</p>
+        <div style="line-height:0"><img src="assets/magnolia/tasks.jpg" alt="Task management" style="width:100%;height:auto;display:block"></div>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">The map is the way into the product, not a feature inside it</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A park is a place. Finding "the third oak on the east path" through nested menus asks the worker to translate where they are standing into a hierarchy someone else invented.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">The map is the main surface, with states for the default view, a selected garden, a pinned object and fire alert mode, and a list of locations alongside it. Drilling into a garden happens on the map; on desktop it holds the main content area with a collapsible detail panel, on mobile it moves into list and detail views.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Navigation matches how the work actually happens — spatially. The cost is that the map takes the most valuable screen space, which is why the location list sits next to it for anyone who would rather read than pan.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/magnolia/map.jpg" alt="Map states" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Map states, with the location list alongside</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">Two roles, two real interfaces, not one squeezed layout</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">The field worker and the office manager use the same data under opposite conditions: one is outdoors on a phone with one hand free, the other is at a desk comparing many records.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Every mobile flow was rebuilt as a desktop equivalent rather than reflowed into one — including the admin areas the field worker never sees, like customers, adding a customer and creating users.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">A responsive squeeze would have made one of the two audiences a second-class user of their own tool. The cost is roughly twice the surface to design and maintain, held together by a shared visual language so both groups still recognise the same product.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/magnolia/customers.jpg" alt="Admin flows on desktop" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Admin flows built for desktop, not reflowed from mobile</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>The work shipped into an existing product rather than as a standalone design.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>Mobile and desktop delivered screen by screen in Figma, including edge cases, empty states, alerts and modals.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>QR codes on object pages give a physical entry point into the system: scan the tag on a tree, land on its record.</span></p>
+      </div>
+    </section>
+
+    <section aria-label="What I'd do differently" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — What I'd do differently</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:70ch;text-wrap:pretty">There was no user research on my part of this project — no time in the field with the people filling in the surveys. That is the gap I would close first, because a fourteen-field form is a very different object on a desk and in the rain, and the only way to know whether the order and the required fields are right is to watch someone complete one on site. I'd also want to see how often the map is actually used to navigate versus the location list, since that assumption shaped the whole entry point.</p>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="#case-nexfit" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">NexFit →</a>
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isNexfit }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="NexFit case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">NexFit</span>
+  </nav>
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="line-height:0"><img src="assets/nexfit/home.jpg" alt="NexFit — hero" style="width:100%;height:auto;display:block"></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">NexFit</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Role</span><span style="font-size:16px;font-weight:600">Product Designer — from scratch, in Figma Make</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Timeline</span><span style="font-size:16px;font-weight:600">2025</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Platform</span><span style="font-size:16px;font-weight:600">Mobile app template · dark UI</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Team</span><span style="font-size:16px;font-weight:600">Direct with the client, a coach based in the US</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Problem and solution" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem &amp; Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Problem</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">A personal trainer who wants their own branded app has two options: pay for a custom product they cannot afford, or use a generic platform that makes them look like everyone else on it. Neither gives them a product that is recognisably theirs.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;border-left:1.5px solid #0A0A0A;padding-left:clamp(24px,3vw,48px)">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Solution</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">NexFit is a complete fitness app designed as a template a coach can buy, rebrand and sell as their own: onboarding that builds a personal plan, training programmes, nutrition and recipes, goal tracking, and a community feed. It is designed so that swapping colours, photography and content produces a different-looking product rather than a reskinned one.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">01</span>Home</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Split into Today, Recipes and Available Programs, plus settings and individual recipe and active-programme pages, so the app has somewhere to send a user on day one.</p>
+        <div style="line-height:0"><img src="assets/nexfit/home.jpg" alt="Home screens" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">02</span>Workout</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Programme browsing through to an active session with notes and history — the state a user is in most often, designed as the state, not as a detail page.</p>
+        <div style="line-height:0"><img src="assets/nexfit/workout.jpg" alt="Workout screens" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">03</span>Nutrition</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Macro tracking with a calorie breakdown, meal logging, and a recipe library split into Saved and Popular, with full ingredient and preparation pages.</p>
+        <div style="line-height:0"><img src="assets/nexfit/nutrition.jpg" alt="Nutrition screens" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">04</span>Goal</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Weight progress against a target date, shown as a graph with current and goal figures, so the reason for the daily work stays visible.</p>
+        <div style="line-height:0"><img src="assets/nexfit/goal.jpg" alt="Goal screens" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">05</span>Community</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">A feed where users post, follow others in the same programme and respond, adding accountability to a product that otherwise only talks to one person.</p>
+        <div style="line-height:0"><img src="assets/nexfit/community.jpg" alt="Community feed" style="width:100%;height:auto;display:block"></div>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">One question per screen in onboarding, even though it makes the flow long</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A personalised plan needs a lot of input: fitness level, current and goal weight, frequency, workout type, location, goal type, target date. Asked all at once, that is a form nobody finishes.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Each screen asks one thing and shows progress, ending in a plan summary with a graph that makes the answers visibly worth giving.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Length is the cheaper cost. A long flow with obvious momentum finishes more often than a short flow that looks like paperwork — and the payoff screen is what turns the input into something the user feels they own.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/nexfit/onboarding.jpg" alt="Onboarding flow" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">One question per screen, ending in a personalised plan</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">Designed as a template, which changes what a good decision looks like</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">Everything in a template will be replaced by someone else: colours, photography, copy, programme content. A design that depends on its specific content breaks the moment a coach makes it theirs.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Components and layouts are built to survive rebranding — structure carries the product, the dark UI with a teal accent is a default rather than a fixture.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">The client is not the end user here; the coach is, and their need is a product that stops looking like mine. That means deliberately leaving room instead of filling it — fewer authored flourishes, more neutrality.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>Not released. The product is still in development, now without me.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>More than thirty screens delivered, covering onboarding, workout, nutrition, goals and community.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>Built as a rebrandable template, so one file is meant to become several coaches' apps rather than one product.</span></p>
+      </div>
+    </section>
+
+    <section aria-label="What I'd do differently" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — What I'd do differently</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:70ch;text-wrap:pretty">This project had research behind it, but not the kind that tests a template: nothing validated whether a coach can actually make this app feel like theirs with the levers I left them. That is what I would look at first — put the file in front of two or three coaches, watch them rebrand it, and see what they reach for that isn't there. I'd also want the onboarding tested for length, since the decision to ask one question at a time is a bet that momentum beats brevity, and that bet is measurable.</p>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="#case-traderise" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">Traderise →</a>
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isAigent }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Insurance Management System case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">Insurance Management System</span>
+  </nav>
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="line-height:0"><img src="assets/insurance/01-hero-customers-lobby.jpg" alt="Insurance Management System — agent lobby" style="width:100%;height:auto;display:block"></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">Insurance Management System</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Role</span><span style="font-size:16px;font-weight:600">Product Designer — end-to-end</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Timeline</span><span style="font-size:16px;font-weight:600">2023 — 2025</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Platform</span><span style="font-size:16px;font-weight:600">Web platform + mobile app · Hebrew &amp; English</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Team</span><span style="font-size:16px;font-weight:600">PM · developers · QA, reviewing in Figma</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Problem and solution" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem &amp; Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Problem</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">An insurance agent's portfolio is scattered across a dozen insurer systems. Monthly commission reports arrive as separate, SMS-code-protected downloads per insurer, and agents rebuilt the whole picture by hand in Excel — so the data they sold against was often weeks out of date without them knowing it.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;border-left:1.5px solid #0A0A0A;padding-left:clamp(24px,3vw,48px)">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Solution</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">A platform built around what an agent actually does: get the data in, trust it, act on it. A download center pulls monthly reports from every insurer and handles verification codes; the customers lobby ranks the whole book by profitability; and freshness is flagged per policy, so the agent always knows exactly what they can rely on.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">01</span>Screen map</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Mapped the product's four domains — portfolio, policies and sales, data intake, account — and how they connect, before designing any screens.</p>
+        <div style="line-height:0"><img src="assets/insurance/02-screen-map.jpg" alt="Screen map" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">02</span>Core user flow</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Detailed the monthly loop that everything else serves: download insurer reports, populate the portfolio, scan the customers lobby, open a customer, and act on data that is up to date.</p>
+        <div style="line-height:0"><img src="assets/insurance/03-core-user-flow.jpg" alt="Core user flow" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">03</span>Roles and access</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Onboarding branches by product type — agency, agency plus agent, agent portfolio — each with per-insurer users, permissions and report scope defined up front.</p>
+        <div style="line-height:0"><img src="assets/insurance/04-roles-and-access.jpg" alt="Roles and access flow" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">04</span>Design system</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">A bilingual component system built to survive four combinations at once: Hebrew and English, RTL and LTR, agent and agency views.</p>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/insurance/05-design-system.jpg" alt="Design system sheets" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Page-level component sheets — Hebrew and English, customers and policies</figcaption>
+        </figure>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">05</span>Responsive breakpoints</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Data-dense tables reworked per breakpoint — columns collapse into grouped summaries rather than shrinking until they're unreadable.</p>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/insurance/06-responsive-breakpoints.jpg" alt="Responsive breakpoints" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">The customers lobby across breakpoints</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">Mobile is one job, not the whole product</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">The analytics workspace can't compress into a phone — but the monthly download ritual, with its per-insurer SMS codes, happens exactly when agents are away from a desk.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">The mobile app is scoped to the download center alone: report status, downloads and SMS verification. Analysis stays on desktop.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Scoping mobile to the moment of need made it genuinely useful — a cramped copy of the dashboard would have served nobody.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/insurance/07-mobile-scope.jpg" alt="Mobile download center flows" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Mobile flows for the download center — from report status to SMS verification</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">The download center shows the process, not just the result</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">Reports arrive per insurer, per user, gated by verification codes. When the process was silent, agents couldn't tell a stalled download from a slow one — and blamed the data.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Every insurer, user and report exposes its state — queued, downloading, verified, failed — with progress and the next action always visible.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Trust in the numbers starts with seeing how they got in. A visible pipeline turned "the system is broken" into "one insurer needs a code".</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/insurance/08-download-center-states.jpg" alt="Download center states" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Download center states — progress, verification and per-report status</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">Staleness is flagged per policy, not per page</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A portfolio is never uniformly fresh — one insurer's report can run a month behind while the rest are current. A page-level warning either cried wolf or got ignored.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Each policy row carries its own freshness state, and the warning names the exact report to download to fix it.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Agents act per policy, so the warning has to live where the decision is made — and point straight at the remedy.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/insurance/09-policy-level-staleness.jpg" alt="Policy-level staleness" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Policy-level staleness, with guidance straight to the download center</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>Released to production and in daily use by agents and agencies.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>One portfolio replaced a dozen insurer logins and manual Excel merges.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>Data trust became a visible system state instead of a guess.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">—</span><span>The bilingual design system held across Hebrew, English, RTL and LTR without forking screens.</span></p>
+      </div>
+    </section>
+
+    <section aria-label="What I'd do differently" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — What I'd do differently</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:70ch;text-wrap:pretty">I would prototype the SMS verification flow with real agents in the first month. It looked like a technical detail, but it is the single moment where the whole system earns or loses trust — and we only understood its weight after the download center was already built. I would also define the RTL/LTR mirroring rules in the design system from day one instead of retrofitting them screen by screen.</p>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="#case-talenttap" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">TalentTap →</a>
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isTraderise }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Traderise case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">Traderise</span>
+  </nav>
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="line-height:0"><img src="assets/traderise/01-cover.jpg" alt="Traderise — cover" style="width:100%;height:auto;display:block"></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">Traderise</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Role</span><span style="font-size:16px;font-weight:600">Product Designer — end-to-end</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Timeline</span><span style="font-size:16px;font-weight:600">2024 – 2025</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Platform</span><span style="font-size:16px;font-weight:600">Responsive web app — desktop, tablet, mobile</span></div>
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">Team</span><span style="font-size:16px;font-weight:600">6 people — client, PM, developers reviewing in Figma</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Problem and solution" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem &amp; Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(24px,3vw,48px)">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Problem</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Traders had good charting tools and good messaging tools — but not the same tool. Analysis happened in a terminal; the conversation about it happened in a group chat somewhere else, and every idea that moved between the two became a flat screenshot: impossible to zoom, retime or build on.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:14px;border-left:1.5px solid #0A0A0A;padding-left:clamp(24px,3vw,48px)">
+          <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase">Solution</h3>
+          <p style="margin:0;font-size:17px;line-height:1.6;text-wrap:pretty">Traderise puts the chart and the conversation about it on one screen. Rooms are scoped to a single trading pair, chat shares the trading screen, and analysis is shared as a live, reopenable object instead of a picture — so ideas compound instead of dying in a feed of images.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">01</span>Information architecture</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Defined the room as the core container of the product — everything a trader needs sits inside it rather than across separate sections.</p>
+        <div style="line-height:0"><img src="assets/traderise/02-ia.jpg" alt="Information architecture" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">02</span>Screen map</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Mapped every screen and overlay in the desktop product and how they connect, before designing any of them.</p>
+        <div style="line-height:0"><img src="assets/traderise/03-screen-map.jpg" alt="Screen map" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">03</span>User flows — core journey</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Detailed the core journey — finding or creating a room, analysing the chart, and publishing the analysis back into the room.</p>
+        <div style="line-height:0"><img src="assets/traderise/04-flow-core.jpg" alt="Core user flow" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">04</span>User flows — members and permissions</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Mapped the separate administrative flow for members, ranks and permissions.</p>
+        <div style="line-height:0"><img src="assets/traderise/05-flow-members.jpg" alt="Members and permissions flow" style="width:100%;height:auto;display:block"></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">05</span>Design system</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Built a component library with variants and states — buttons, inputs, search, filters, list rows, avatars, dialogs — so the interface stayed consistent as scope grew.</p>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/traderise/12-design-system.jpg" alt="Component library" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Component library with variants and states</figcaption>
+        </figure>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;margin-top:clamp(24px,5vh,64px)">
+        <h3 style="margin:0;display:flex;gap:16px;align-items:baseline;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em"><span style="font-family:Anton,sans-serif;font-size:24px;font-weight:400;color:var(--accent,#F2965A)">06</span>Responsive design</h3>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#3A3A3A;max-width:70ch">Reworked the product across three breakpoints, rather than scaling the desktop layout down.</p>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/traderise/11-mobile-drawing.jpg" alt="Mobile drawing tools" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Drawing tools rebuilt for touch, not scaled down</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">The chat lives inside the trading screen</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">A trader who leaves the chart to read the discussion loses the thing being discussed. But a chat panel takes width away from a chart that needs every pixel it can get.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">The right-hand panel switches between watchlist and chat, so both are one click away without leaving the chart. On top of that, recent messages surface as a floating card over the chart itself — visible without opening anything.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">The chart is the reason people are here; the conversation is the reason they stay. Neither could be made secondary. The floating card was the compromise: it keeps the discussion in peripheral vision at the cost of covering part of the canvas — which is why it can be dismissed at any moment.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/traderise/06-chat-panel.jpg" alt="Chat panel inside the trading screen" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">The chat panel shares the right column with the watchlist</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">An idea is shared as an object, not a screenshot</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">The standard way to share chart analysis is to screenshot it. The moment you do, the analysis stops being usable — nobody can change the timeframe, follow a level, or build on what you drew.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Share draft posts the markup into the chat as a live object. Anyone in the room can open it on their own chart and rework it through Reanalyze.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">This is the feature the product exists for. If a shared idea can be reopened and modified, the room becomes a place where analysis compounds instead of a feed of images.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/traderise/07-share-draft.jpg" alt="Share draft flow" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Markup published into the room as a reopenable object</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:24px;margin-top:clamp(32px,6vh,72px)">
+        <h3 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(22px,2.2vw,32px);line-height:1">A room is a trading pair, not a topic</h3>
+        <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h4><p style="margin:0;font-size:16px;line-height:1.55">In general-purpose chats, discussion of every instrument runs together. Finding the conversation about the pair you're actually trading means scrolling past everything else.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h4><p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">Each room is tied to one coin pair. Opening a room loads that chart; the conversation inside it is about that chart and nothing else.</p></div>
+          <div style="display:flex;flex-direction:column;gap:10px"><h4 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h4><p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">Context shouldn't have to be re-established in every message. When everyone in the room is looking at the same thing, the discussion can start at the substance.</p></div>
+        </div>
+        <figure style="margin:0">
+          <div style="line-height:0"><img src="assets/traderise/08-rooms-list.jpg" alt="Rooms list" style="width:100%;height:auto;display:block"></div>
+          <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">Rooms are scoped to a single pair</figcaption>
+        </figure>
+      </div>
+    </section>
+
+        <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">→</span><span>Released to production.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">→</span><span>A design system that held — variants and states covered the interface as scope expanded across rooms, chat, member management and three breakpoints.</span></p>
+        <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">→</span><span>A shared vocabulary with engineering — developers reviewed and commented directly in Figma, keeping design decisions and implementation questions in one place.</span></p>
+      </div>
+      </section>
+
+    <section aria-label="What I’d do differently" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — What I’d do differently</h2>
+      <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:70ch;text-wrap:pretty">This project ran without user research. The decisions were made from the product brief and from discussion with the client and the team, and the biggest of them — putting the chat inside the trading screen — is exactly the kind of trade-off that should have been tested rather than argued. Given the same project again, I’d validate the panel-versus-overlay compromise with a handful of traders before committing to it, and I’d instrument the share draft flow so we could see whether shared ideas were actually being reopened and reworked, or just read.</p>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="#case-insurance" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">Insurance Management System →</a><!-- traderise → insurance -->
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isCase }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Case study">
+  <nav aria-label="Case study navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px clamp(20px,5vw,64px)">
+    <a href="#work" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+    <span style="font-family:Anton,sans-serif;font-size:16px;text-transform:uppercase;letter-spacing:0.04em;text-align:right">{{ cs.title }}</span>
+  </nav>
+
+  <div style="padding:clamp(32px,5vh,56px) clamp(20px,5vw,64px);display:flex;flex-direction:column;gap:clamp(56px,8vh,96px)">
+
+    <section aria-label="Overview" style="display:flex;flex-direction:column;gap:32px">
+      <div style="aspect-ratio:21/9"><image-slot id="cs-{{ cs.slug }}-hero" shape="rounded" radius="10" placeholder="{{ cs.title }} — hero image, 21:9"></image-slot></div>
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(40px,6vw,88px);line-height:0.92;text-wrap:balance">{{ cs.title }}</h1>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:24px;border-top:1.5px solid #0A0A0A;border-bottom:1.5px solid #0A0A0A;padding:24px 0">
+        <sc-for list="{{ cs.meta }}" as="m" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <span style="font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent,#F2965A)">{{ m.k }}</span>
+            <span style="font-size:16px;font-weight:600">{{ m.v }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section aria-label="Problem" style="display:flex;flex-direction:column;gap:20px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">01 — Problem</h2>
+      <p style="margin:0;font-size:clamp(19px,1.6vw,22px);line-height:1.55;max-width:65ch;text-wrap:pretty">{{ cs.problem }}</p>
+    </section>
+
+    <section aria-label="Process" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">02 — Process</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,32px)">
+        <sc-for list="{{ cs.process }}" as="step" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font-family:Anton,sans-serif;font-size:28px;color:var(--accent,#F2965A)">{{ step.n }}</span>
+            <h3 style="margin:0;font-size:17px;font-weight:800;text-transform:uppercase;letter-spacing:0.04em">{{ step.label }}</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:#5A5A5A">{{ step.text }}</p>
+            <div style="aspect-ratio:4/3;margin-top:4px"><image-slot id="cs-{{ cs.slug }}-step-{{ $index }}" shape="rounded" radius="8" placeholder="{{ step.label }} artifact"></image-slot></div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section aria-label="Key decisions" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">03 — Key decisions</h2>
+      <div style="display:flex;flex-direction:column;gap:24px">
+        <sc-for list="{{ cs.decisions }}" as="d" hint-placeholder-count="3">
+          <div style="border:1.5px solid #0A0A0A;padding:clamp(24px,3vw,40px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:clamp(20px,2.5vw,36px)">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Problem</h3>
+              <p style="margin:0;font-size:16px;line-height:1.55">{{ d.p }}</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent,#F2965A)">Decision</h3>
+              <p style="margin:0;font-size:16px;line-height:1.55;font-weight:600">{{ d.d }}</p>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">Why</h3>
+              <p style="margin:0;font-size:16px;line-height:1.55;color:#5A5A5A">{{ d.w }}</p>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section aria-label="Solution" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">04 — Solution</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(20px,2.5vw,32px)">
+        <sc-for list="{{ cs.screens }}" as="s" hint-placeholder-count="3">
+          <figure style="{{ s.st }}">
+            <div style="aspect-ratio:16/10"><image-slot id="cs-{{ cs.slug }}-screen-{{ $index }}" shape="rounded" radius="8" placeholder="{{ s.caption }}"></image-slot></div>
+            <figcaption style="margin-top:10px;font-size:14px;line-height:1.5;color:#5A5A5A">{{ s.caption }}</figcaption>
+          </figure>
+        </sc-for>
+      </div>
+    </section>
+
+    <section aria-label="Outcome" style="display:flex;flex-direction:column;gap:32px">
+      <h2 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A">05 — Outcome</h2>
+      <div style="display:flex;flex-direction:column;gap:24px;max-width:900px">
+        <sc-for list="{{ cs.outcomes }}" as="o" hint-placeholder-count="3">
+          <p style="margin:0;font-size:clamp(20px,2.2vw,28px);line-height:1.4;font-weight:600;border-left:none;display:flex;gap:16px;text-wrap:pretty"><span style="color:var(--accent,#F2965A);flex-shrink:0">→</span><span>{{ o }}</span></p>
+        </sc-for>
+      </div>
+      <div style="background:#F5F5F2;padding:clamp(24px,3vw,40px);max-width:900px;box-sizing:border-box">
+        <h3 style="margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A5A">What I'd do differently</h3>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#5A5A5A;max-width:65ch">{{ cs.differently }}</p>
+      </div>
+    </section>
+
+    <section aria-label="Next case" style="border-top:1.5px solid #0A0A0A;padding-top:clamp(32px,5vh,48px)">
+      <span style="display:block;font-size:13px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#5A5A5A;margin-bottom:12px">Next case</span>
+      <a href="{{ nextHref }}" style="display:inline-block;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(32px,4.5vw,64px);line-height:0.95;padding:4px 8px;margin-left:-8px" style-hover="background:#0A0A0A;color:#FFFFFF">{{ nextTitle }} →</a>
+    </section>
+  </div>
+</div>
+</sc-if>
+
+<sc-if value="{{ isResume }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="Resume">
+  <nav aria-label="Resume navigation" style="position:sticky;top:0;z-index:20;background:#FFFFFF;border-bottom:1.5px solid #0A0A0A;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(20px,5vw,64px)">
+    <a href="#" style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:8px 14px;margin-left:-14px" style-hover="background:#0A0A0A;color:#FFFFFF">← Back</a>
+  </nav>
+
+  <main style="max-width:900px;margin:0 auto;padding:clamp(40px,6vh,72px) clamp(20px,5vw,40px);display:flex;flex-direction:column;gap:clamp(48px,7vh,72px)">
+    <header style="display:flex;flex-direction:column;gap:16px">
+      <h1 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(44px,6vw,80px);line-height:0.92">Yuliia Melnyk</h1>
+      <p style="margin:0;font-size:18px;font-weight:600">Product Designer</p>
+      <p style="margin:0;font-size:15px;color:#5A5A5A">Budva, Montenegro (CET) · <a href="mailto:yuliia.melnyk.12@gmail.com" style="text-decoration:underline">yuliia.melnyk.12@gmail.com</a> · Telegram <a href="https://t.me/Yuliiaaa_Melnyk" style="text-decoration:underline">@Yuliiaaa_Melnyk</a></p>
+    </header>
+
+    <section aria-label="Experience" style="display:flex;flex-direction:column;gap:8px">
+      <h2 style="margin:0 0 24px;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,38px);line-height:0.95;border-bottom:1.5px solid #0A0A0A;padding-bottom:16px">Experience</h2>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0;border-bottom:1.5px solid #E4E4E0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">2026 — Present · Remote, Montenegro</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">Freelance Product Designer</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55;color:#0A0A0A">
+          <li>Working directly with product teams and founders on end-to-end product design.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0;border-bottom:1.5px solid #E4E4E0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">Nov 2022 — 2025 · Remote, Montenegro</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">Product Designer — Kooya (contracted through SweetSoft LLC)</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55;color:#0A0A0A">
+          <li>Designed products for an AI-driven product company working across recruitment, field management, trading and insurance in five countries.</li>
+          <li>Owned end-to-end UX for AiGent, an insurance portfolio management platform for agents and agencies, in Hebrew RTL and English LTR.</li>
+          <li>Led design of Traderise, a real-time crypto trading platform where charting and discussion share one screen.</li>
+          <li>Designed TalentTap, a recruitment platform integrating with LinkedIn through a Chrome extension and an analytics web app.</li>
+          <li>Extended Magnolia, a cross-platform park maintenance product serving field workers on mobile and supervisors on desktop.</li>
+          <li>Further products under NDA.</li>
+          <li>Defined and maintained the design systems these products run on, working directly with PMs and developers in Figma.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0;border-bottom:1.5px solid #E4E4E0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">2024 — 2025 · Remote, US</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">Product Designer — 7 House Tech, Inc (contracted through SweetSoft LLC)</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55;color:#0A0A0A">
+          <li>Designed two mobile applications from scratch and four websites for the agency's clients.</li>
+          <li>Designed NexFit, a white-label fitness and nutrition app template built for an agency client to rebrand and sell as their own product.</li>
+          <li>Produced promotional graphics and banners alongside product work.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0;border-bottom:1.5px solid #E4E4E0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">Oct 2022 · Remote, Australia</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">UI Designer, Internship — AVY</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55">
+          <li>Designed responsive screens and components within an existing product design system.</li>
+          <li>Delivered work asynchronously across time zones in a fully distributed team.</li>
+          <li>Presented design decisions to senior designers and iterated on structured critique.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0;border-bottom:1.5px solid #E4E4E0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">Sep 2022 – Oct 2022 · Remote, Ukraine</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">UI Designer — Baza Trainee Ukraine</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55">
+          <li>Designed web interfaces in a team environment simulating production delivery.</li>
+          <li>Shipped final UI on schedule while iterating on feedback from senior mentors.</li>
+        </ul>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:12px;padding:20px 0">
+        <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">2020 – 2021 · Remote</p>
+        <h3 style="margin:0;font-size:20px;font-weight:800">Freelance UI/UX Designer</h3>
+        <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55">
+          <li>Owned the full design cycle for landing pages and small web services: brief, wireframes, UI, handoff.</li>
+          <li>Defined scope and communicated directly with clients from first call to delivery.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-label="Skills" style="display:flex;flex-direction:column;gap:24px">
+      <h2 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,38px);line-height:0.95;border-bottom:1.5px solid #0A0A0A;padding-bottom:16px">Skills</h2>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">Design</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">UX Research</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Journey Mapping</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Information Architecture</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Wireframing</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Prototyping</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Design Systems</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Accessibility</span>
+          <span style="border:1.5px solid #0A0A0A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:600">Responsive Design</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <h3 style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#5A5A5A">Tools</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Figma</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Figma Make</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Claude Design</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Claude Code</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Lovable</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Webflow</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Jira</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Notion</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Trello</span>
+          <span style="border:1.5px solid #5A5A5A;border-radius:999px;padding:6px 16px;font-size:13px;font-weight:500">Asana</span>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Education" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,38px);line-height:0.95;border-bottom:1.5px solid #0A0A0A;padding-bottom:16px">Education</h2>
+      <div>
+        <p style="margin:0 0 4px;font-size:17px;font-weight:700">Bachelor's Degree, Management of Innovative Activity</p>
+        <p style="margin:0;font-size:15px;color:#5A5A5A">Kharkiv National University of Economics · 2018–2022</p>
+      </div>
+    </section>
+
+    <section aria-label="Courses and certificates" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,38px);line-height:0.95;border-bottom:1.5px solid #0A0A0A;padding-bottom:16px">Courses &amp; Certificates</h2>
+      <ul style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.55">
+        <li><strong>Web Design Basic</strong> — Hillel IT School</li>
+        <li><strong>UI/UX Design Pro</strong> — Hillel IT School</li>
+        <li><strong>Formula Webflow</strong> — Author's Course</li>
+      </ul>
+    </section>
+
+    <section aria-label="Languages" style="display:flex;flex-direction:column;gap:16px">
+      <h2 style="margin:0;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(26px,3vw,38px);line-height:0.95;border-bottom:1.5px solid #0A0A0A;padding-bottom:16px">Languages</h2>
+      <p style="margin:0;font-size:16px;font-weight:600">English · Ukrainian · Russian</p>
+    </section>
+  </main>
+</div>
+</sc-if>
+
+<footer id="contact" data-screen-label="Footer" style="background:#0A0A0A;color:#FFFFFF;padding:clamp(48px,8vh,96px) clamp(20px,5vw,64px) 32px">
+  <h2 style="margin:0 0 40px;font-family:Anton,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(44px,7vw,110px);line-height:0.92;text-wrap:balance">Let's work together</h2>
+  <a href="mailto:yuliia.melnyk.12@gmail.com" style="display:inline-block;color:#FFFFFF;font-size:clamp(18px,2.2vw,28px);font-weight:600;text-decoration:underline;text-underline-offset:6px;padding:4px 8px;margin-left:-8px" style-hover="background:#FFFFFF;color:#0A0A0A;text-decoration:none">yuliia.melnyk.12@gmail.com</a>
+  <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:40px">
+    <a href="https://t.me/Yuliiaaa_Melnyk" style="color:#FFFFFF;border:1.5px solid #FFFFFF;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em" style-hover="background:#FFFFFF;color:#0A0A0A">Telegram</a>
+    <a href="https://www.linkedin.com/in/yuliia-melnyk-6b986b28a/" style="color:#FFFFFF;border:1.5px solid #FFFFFF;padding:12px 22px;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em" style-hover="background:#FFFFFF;color:#0A0A0A">LinkedIn</a>
+  </div>
+  <p style="margin:64px 0 0;font-size:13px;color:#8A8A8A">© 2026 Yuliia Melnyk. Designed and built in Claude Design.</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;accent&quot;: {&quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#F2965A&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#F2965A&quot;, &quot;#19C37D&quot;, &quot;#2D6CDF&quot;, &quot;#0A0A0A&quot;], &quot;section&quot;: &quot;Brand&quot;},
+  &quot;availableForWork&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;},
+  &quot;showAiSection&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Content&quot;}
+}">
+class Component extends DCLogic {
+  static CASES = [
+    {
+      slug: 'insurance', title: 'Insurance Management System',
+      meta: [{k:'Role',v:'Lead Product Designer'},{k:'Timeline',v:'2023 — Present'},{k:'Platform',v:'Web · Desktop-first'},{k:'Team',v:'PM · 6 engineers · QA'}],
+      problem: 'Policies, claims and client records lived in a legacy system patched with spreadsheets and email. Every handoff between agents, underwriters and claims managers meant re-entering data, and mistakes surfaced weeks later as failed audits and frustrated clients. The business needed one system four different roles could rely on daily.',
+      process: [
+        {label:'Research', text:'Interviewed agents, underwriters and claims managers to map how work actually moved between them.'},
+        {label:'Flows & IA', text:'Modelled the policy and claims lifecycles as one shared status model across all roles.'},
+        {label:'Wireframes', text:'Validated table-first layouts and edge cases with underwriters before any UI work.'},
+        {label:'UI & System', text:'Built the interface on a documented component library for engineering handoff.'}
+      ],
+      decisions: [
+        {p:'Four roles needed four different tools — but the budget allowed one product.', d:'One system with role-based workspaces: a shared data model with different default views and permissions per role.', w:'Every role stays in sync on the same records while seeing only what they act on.'},
+        {p:'Complex records overwhelmed users when everything was shown at once.', d:'Table-first layouts with progressive disclosure — dense scannable lists, detail panels on demand.', w:'Experienced staff scan fast; new hires drill in without losing context.'},
+        {p:'Statuses meant different things in different modules, causing errors at every handoff.', d:'A single unified status vocabulary across policies, claims and tasks.', w:'A claim “in review” now means the same thing to everyone, removing a whole class of mistakes.'}
+      ],
+      screens: [
+        {caption:'Claims workspace — the shared queue every role starts from', wide:true},
+        {caption:'Policy detail with progressive disclosure', wide:false},
+        {caption:'Underwriter review flow', wide:false},
+        {caption:'Unified status model across modules', wide:true}
+      ],
+      outcomes: [
+        'Four roles now work in one system instead of a legacy tool plus spreadsheets.',
+        'Handoffs follow a shared status model — errors surface immediately, not weeks later at audit.',
+        'The component library became the base for other SweetSoft products.'
+      ],
+      differently: 'I would involve the claims managers even earlier. Their edge cases arrived after the flows were drawn and cost us a wireframe cycle we could have avoided.'
+    },
+    { slug: 'traderise', title: 'Traderise', meta: [], problem: '', process: [], decisions: [], screens: [], outcomes: [], differently: '' },
+    {
+      slug: 'talenttap', title: 'TalentTap',
+      meta: [{k:'Role',v:'Product Designer'},{k:'Timeline',v:'2024'},{k:'Platform',v:'Web app + Chrome extension'},{k:'Team',v:'Founder · PM · 3 engineers'}],
+      problem: 'Recruiters lived in LinkedIn, but their analytics lived elsewhere. Every candidate meant switching tabs into a separate tool to check pipeline fit, so insights arrived too late to shape outreach — or were skipped entirely.',
+      process: [
+        {label:'Research', text:'Interviewed recruiters and mapped a full day of sourcing, tab by tab.'},
+        {label:'Flows & IA', text:'Split the product into in-context jobs (extension) and reflective jobs (dashboard).'},
+        {label:'Wireframes', text:'Tested extension overlays for signal density without covering the profile being read.'},
+        {label:'UI', text:'One design system shared between the web app and the extension surface.'}
+      ],
+      decisions: [
+        {p:'Insights in a separate tab were ignored during active sourcing.', d:'A Chrome extension that surfaces candidate analytics directly on the profile being viewed.', w:'The insight appears at the exact moment the decision is made — no context switch.'},
+        {p:'Recruiters distrusted an opaque AI score.', d:'Every score expands into the signals behind it, phrased in recruiter language.', w:'An explainable score gets used; a magic number gets ignored.'}
+      ],
+      screens: [
+        {caption:'Pipeline analytics dashboard', wide:true},
+        {caption:'Extension overlay on a candidate profile', wide:false},
+        {caption:'Explainable score breakdown', wide:false}
+      ],
+      outcomes: [
+        'Candidate insights now appear inside the sourcing flow instead of a separate tool.',
+        'Explainable scoring turned the AI from a curiosity into part of the daily routine.'
+      ],
+      differently: 'I would prototype the extension in the browser earlier. Figma couldn’t show how overlays fought with the host page’s own UI, and we learned it late.'
+    },
+    {
+      slug: 'magnolia', title: 'Magnolia',
+      meta: [{k:'Role',v:'Product Designer'},{k:'Timeline',v:'2023'},{k:'Platform',v:'Mobile app · iOS & Android'},{k:'Team',v:'PM · 4 engineers'}],
+      problem: 'Field technicians reported asset defects through paper forms and photos in chat threads. The office had no reliable picture of asset condition, and reports written from memory at the end of a shift missed the details that mattered.',
+      process: [
+        {label:'Research', text:'Rode along with technicians to see where reporting actually happens — often gloved, outdoors, offline.'},
+        {label:'Flows', text:'Designed the report as a guided wizard that matches the physical inspection order.'},
+        {label:'Wireframes', text:'Tested one-hand reachability and step count on site, not in the office.'},
+        {label:'UI', text:'High-contrast interface sized for sunlight, gloves and hurry.'}
+      ],
+      decisions: [
+        {p:'Coverage was patchy on remote sites; reports failed to send and were abandoned.', d:'Offline-first architecture — every report saves locally and syncs when a connection returns.', w:'Technicians trust that work is never lost, so they report on the spot instead of from memory.'},
+        {p:'Free-text reports missed critical details.', d:'A photo-first guided wizard: capture the defect, then answer only the questions relevant to that asset type.', w:'Structure guarantees completeness without making the form feel long.'}
+      ],
+      screens: [
+        {caption:'Guided report wizard', wide:true},
+        {caption:'Asset condition overview for the office', wide:false},
+        {caption:'Offline queue and sync state', wide:false}
+      ],
+      outcomes: [
+        'Reporting moved from end-of-shift paperwork to the moment of inspection.',
+        'The office gained a live, structured view of asset condition for maintenance planning.'
+      ],
+      differently: 'I would test with gloves and sunlight in the first week, not after the first design review — both reshaped the component sizing.'
+    },
+    {
+      slug: 'nexfit', title: 'NexFit',
+      meta: [{k:'Role',v:'Product Designer'},{k:'Timeline',v:'2022'},{k:'Platform',v:'Mobile app · iOS'},{k:'Team',v:'Founder · 2 engineers'}],
+      problem: 'People joined NexFit motivated and left within weeks. Logging a meal took too many taps, missed days read as failure, and the app punished exactly the users it needed to keep.',
+      process: [
+        {label:'Research', text:'Analysed drop-off interviews to find where motivation actually broke.'},
+        {label:'Flows', text:'Redesigned logging around the 80% of meals that repeat.'},
+        {label:'Wireframes', text:'Prototyped a three-tap log and tested it head-to-head against the old flow.'},
+        {label:'UI', text:'A warm, calm interface that treats a missed day as data, not guilt.'}
+      ],
+      decisions: [
+        {p:'Logging a routine meal took as long as logging a brand-new one.', d:'Recents and one-tap repeat as the primary logging surface; full search one level down.', w:'The daily habit is optimised for the daily case.'},
+        {p:'Streaks punished real life and drove uninstalls after a single missed day.', d:'Progress framed as weekly trends instead of unbroken chains.', w:'A missed day becomes a dip in a chart, not a broken promise.'}
+      ],
+      screens: [
+        {caption:'Daily plan and quick logging', wide:true},
+        {caption:'Three-tap meal log', wide:false},
+        {caption:'Weekly trends view', wide:false}
+      ],
+      outcomes: [
+        'Routine logging became a seconds-long habit instead of a chore.',
+        'Progress framing shifted from streak anxiety to sustainable weekly trends.'
+      ],
+      differently: 'I would push back sooner on gamification asks. We spent a sprint on badges that the research already suggested were the problem.'
+    }
+  ];
+  state = {
+    hash: typeof location !== 'undefined' ? location.hash : '',
+    narrow: typeof window !== 'undefined' && window.matchMedia('(max-width: 900px)').matches
+  };
+  componentDidMount() {
+    this._mq = window.matchMedia('(max-width: 900px)');
+    this._onMq = (e) => this.setState({ narrow: e.matches });
+    this._mq.addEventListener('change', this._onMq);
+    this._onHash = () => {
+      const h = location.hash;
+      this.setState({ hash: h });
+      if (h === '' || h === '#' || h === '#resume' || h.startsWith('#case-')) {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    };
+    window.addEventListener('hashchange', this._onHash);
+    this._applyAccent();
+    this._initReveal();
+  }
+  componentDidUpdate() { this._applyAccent(); this._initReveal(); }
+  _initReveal() {
+    if (!this._revealCheck) {
+      this._revealCheck = () => {
+        const vh = window.innerHeight;
+        document.querySelectorAll('[data-reveal]:not(.om-revealed)').forEach(el => {
+          const r = el.getBoundingClientRect();
+          if (r.top < vh * 0.92 && r.bottom > 0) el.classList.add('om-revealed');
+        });
+      };
+      window.addEventListener('scroll', this._revealCheck, { passive: true });
+      window.addEventListener('load', () => setTimeout(this._revealCheck, 100));
+    }
+    setTimeout(this._revealCheck, 60);
+    setTimeout(this._revealCheck, 400);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this._onHash);
+    if (this._mq) this._mq.removeEventListener('change', this._onMq);
+  }
+  _applyAccent() {
+    document.documentElement.style.setProperty('--accent', this.props.accent ?? '#F2965A');
+  }
+  renderVals() {
+    const CASES = Component.CASES;
+    const h = this.state.hash || '';
+    const slug = h.startsWith('#case-') ? h.slice(6) : null;
+    const idx = CASES.findIndex(c => c.slug === slug);
+    const isTraderise = slug === 'traderise';
+    const isAigent = slug === 'insurance';
+    const isTalentTap = slug === 'talenttap';
+    const isMagnolia = slug === 'magnolia';
+    const isNexfit = slug === 'nexfit';
+    const bespoke = isTraderise || isAigent || isTalentTap || isMagnolia || isNexfit;
+    const isCase = idx >= 0 && !bespoke;
+    const isResume = h === '#resume';
+    const raw = isCase ? CASES[idx] : CASES[0];
+    const cs = Object.assign({}, raw, {
+      process: raw.process.map((s, i) => Object.assign({ n: '0' + (i + 1) }, s)),
+      screens: raw.screens.map(s => Object.assign({ st: s.wide ? { gridColumn: '1 / -1' } : {} }, s))
+    });
+    const next = CASES[(isCase ? idx + 1 : 1) % CASES.length];
+    return {
+      isHome: !isCase && !isResume && !bespoke,
+      isCase, isResume, isTraderise, isAigent, isTalentTap, isMagnolia, isNexfit, cs,
+      nextHref: '#case-' + next.slug,
+      nextTitle: next.title,
+      showAi: this.props.showAiSection ?? true,
+      heroCardCols: this.state.narrow ? '1fr' : '1fr 1fr 1fr',
+      printResume: () => window.print()
+    };
+  }
+}
+</script>
+</body>
+</html>
